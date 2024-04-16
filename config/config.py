@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "12210813"))
+API_HASH = getenv("API_HASH", "e42eeae11a2f96bcfc5ec3b46a30adad")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5884794395:AAHt2kBcM_BJYnlD0_REITCS6R5s3UfNld4"))
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Kolge:kOlge@12w@cluster0.e98lhcw.mongodb.net/")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001872296360"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "salam")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5663585448").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -56,7 +56,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamYukki/YukkiMusicBot",
+    "https://github.com/Boynu/YukkiMusicBot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -72,7 +72,7 @@ SUPPORT_GROUP = getenv(
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "true")
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -138,11 +138,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("STRING_SESSION", "AgE6BQ8AHAVJf_MZa_Ik9wPoBJu77062kdbpTQOfdBy2F5ew13SMU5YnWMAGbJpaEJAr84fuV9pXekybvG7DNa9_Wgbr2MDeRtiG9EdanmzbiJN7U-oCojOILjgRKaxnu0pYlRmI47tSd3eaUuWXSuqF3j83T07IO_qJ16fpr20M1LlQHK60ZyG-OM6qBbSQJGoPcSBkKlWF-MH0NVFvBU1b5Id1VcWAB0QzllS2AKib5eWAufQ30VVMt0tEmBXT6YYCPThw4HdWnblSZWyG_NIc5p7J0XofeeTdIGH5zKLaifkUoBVh96nuU-erJOUCrtIrX3SQSjuzHzw35xqg5DcVri8ZnwAAAAF8ttsGAA")
+STRING2 = getenv("STRING_SESSION2", "AgE6BQ8AHAVJf_MZa_Ik9wPoBJu77062kdbpTQOfdBy2F5ew13SMU5YnWMAGbJpaEJAr84fuV9pXekybvG7DNa9_Wgbr2MDeRtiG9EdanmzbiJN7U-oCojOILjgRKaxnu0pYlRmI47tSd3eaUuWXSuqF3j83T07IO_qJ16fpr20M1LlQHK60ZyG-OM6qBbSQJGoPcSBkKlWF-MH0NVFvBU1b5Id1VcWAB0QzllS2AKib5eWAufQ30VVMt0tEmBXT6YYCPThw4HdWnblSZWyG_NIc5p7J0XofeeTdIGH5zKLaifkUoBVh96nuU-erJOUCrtIrX3SQSjuzHzw35xqg5DcVri8ZnwAAAAF8ttsGAA")
+STRING3 = getenv("STRING_SESSION3", "AgE6BQ8AHAVJf_MZa_Ik9wPoBJu77062kdbpTQOfdBy2F5ew13SMU5YnWMAGbJpaEJAr84fuV9pXekybvG7DNa9_Wgbr2MDeRtiG9EdanmzbiJN7U-oCojOILjgRKaxnu0pYlRmI47tSd3eaUuWXSuqF3j83T07IO_qJ16fpr20M1LlQHK60ZyG-OM6qBbSQJGoPcSBkKlWF-MH0NVFvBU1b5Id1VcWAB0QzllS2AKib5eWAufQ30VVMt0tEmBXT6YYCPThw4HdWnblSZWyG_NIc5p7J0XofeeTdIGH5zKLaifkUoBVh96nuU-erJOUCrtIrX3SQSjuzHzw35xqg5DcVri8ZnwAAAAF8ttsGAA")
+STRING4 = getenv("STRING_SESSION4", "AgE6BQ8AHAVJf_MZa_Ik9wPoBJu77062kdbpTQOfdBy2F5ew13SMU5YnWMAGbJpaEJAr84fuV9pXekybvG7DNa9_Wgbr2MDeRtiG9EdanmzbiJN7U-oCojOILjgRKaxnu0pYlRmI47tSd3eaUuWXSuqF3j83T07IO_qJ16fpr20M1LlQHK60ZyG-OM6qBbSQJGoPcSBkKlWF-MH0NVFvBU1b5Id1VcWAB0QzllS2AKib5eWAufQ30VVMt0tEmBXT6YYCPThw4HdWnblSZWyG_NIc5p7J0XofeeTdIGH5zKLaifkUoBVh96nuU-erJOUCrtIrX3SQSjuzHzw35xqg5DcVri8ZnwAAAAF8ttsGAA")
+STRING5 = getenv("STRING_SESSION5", "AgE6BQ8AHAVJf_MZa_Ik9wPoBJu77062kdbpTQOfdBy2F5ew13SMU5YnWMAGbJpaEJAr84fuV9pXekybvG7DNa9_Wgbr2MDeRtiG9EdanmzbiJN7U-oCojOILjgRKaxnu0pYlRmI47tSd3eaUuWXSuqF3j83T07IO_qJ16fpr20M1LlQHK60ZyG-OM6qBbSQJGoPcSBkKlWF-MH0NVFvBU1b5Id1VcWAB0QzllS2AKib5eWAufQ30VVMt0tEmBXT6YYCPThw4HdWnblSZWyG_NIc5p7J0XofeeTdIGH5zKLaifkUoBVh96nuU-erJOUCrtIrX3SQSjuzHzw35xqg5DcVri8ZnwAAAAF8ttsGAA")
 
 
 #  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
